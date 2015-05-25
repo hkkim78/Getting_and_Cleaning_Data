@@ -19,7 +19,8 @@ Here are the data for the project:
 The R script called "run_analysis.R" does the following:
 
      1) Merges the training and the test sets to create one data set.
-     2) Extracts only the measurements on the mean and standard deviation for each measurement.
+     2) Extracts only the measurements on the mean and standard deviation for each 
+        measurement.
      3) Uses descriptive activity names to name the activities in the data set
      4) Appropriately labels the data set with descriptive variable names.
      5) From the data set in step 4, creates a second, independent tidy data set with the 
@@ -27,15 +28,16 @@ The R script called "run_analysis.R" does the following:
 
 The following are tips to peform this project:
 
-     0) Two libraries 'data.table' and 'dplyr' are needed, and use 'read.table' in reading files.
-     1-a) Combine same type of tables under /test and /train sub-folders using rbind() function.
+     0) Two libraries 'data.table' and 'dplyr' are needed; use 'read.table' in reading files.
+     1-a) Combine same type of tables under /test and /train sub-folders using rbind() 
+          function.
      1-b) Add the column names. The list of "feature.txt" can be names for Features.
      1-c) Join Subject, Activity, and Features columns using cbind() function.
      2) Use 'grep()' function to extract only columns whos name including 'mean' or 'std'.
      3) Confer 'activity_labels.txt' to make descriptive activiy names.
-     4) In order to give descriptive feature variable names, replace 't' w/ 'time', 'f' w/ 'freq', 
-        'Acc' w/ 'Accelerometer', 'Gyro' w/ 'Gyroscope', 'Mag' w/ 'Magnetometer', 'BodyBody' w/ 
-        'Body', etc.
+     4) In order to give descriptive feature variable names, replace 't' w/ 'time', 'f' w/ 
+        'freq', 'Acc' w/ 'Accelerometer', 'Gyro' w/ 'Gyroscope', 'Mag' w/ 'Magnetometer', 
+        'BodyBody' w/ 'Body', etc.
      5-a) To creata a tidy data, use 'data.table()' and aggregate() functions.
      5-b) To upload the tidy data set as a text file, use 'write.table()' function with 
           row.name=FALSE.
