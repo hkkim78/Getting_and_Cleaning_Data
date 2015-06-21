@@ -29,15 +29,15 @@ The R script called "run_analysis.R" does the following:
 The following are tips to peform this project:
 
      0) Two libraries 'data.table' and 'dplyr' are needed; use 'read.table' in reading files.
-     1) a. Combine same type of tables under /test and /train sub-folders using rbind() 
-           unction.
+     1) a. Combine same type of tables under ./test and ./train sub-folders using rbind() 
+           function.
         b. Add the column names. The list of "feature.txt" can be names for Features.
         c. Join Subject, Activity, and Features columns using cbind() function.
-     2) Use 'grep()' function to extract only columns whos name including 'mean' or 'std'.
+     2) Use 'grep()' function to extract only columns whose name include 'mean' or 'std'.
      3) Confer 'activity_labels.txt' to make descriptive activiy names.
-     4) In order to give descriptive feature variable names, replace 't' w/ 'time', 'f' w/ 
-        'freq', 'Acc' w/ 'Accelerometer', 'Gyro' w/ 'Gyroscope', 'Mag' w/ 'Magnetometer', 
-        'BodyBody' w/ 'Body', etc.
+     4) In order to give descriptive feature variable names, replace 't' with 'time', 'f' 
+        with 'freq', 'Acc' with 'Accelerometer', 'Gyro' with 'Gyroscope', 'Mag' with  
+        'Magnetometer', 'BodyBody' with 'Body', etc.
      5) a. To creata a tidy data, use 'data.table()' and aggregate() functions.
         b. To upload the tidy data set as a text file, use 'write.table()' function with 
           row.name=FALSE.
