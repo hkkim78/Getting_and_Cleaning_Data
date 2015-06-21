@@ -28,7 +28,7 @@ The R script called "run_analysis.R" does the following:
 
 The following are tips to peform this project:
 
-     0) Two libraries 'data.table' and 'dplyr' are needed; use 'read.table' in reading files.
+     1) Two libraries 'data.table' and 'dplyr' are needed; use 'read.table' in reading files.
      1-a) Combine same type of tables under /test and /train sub-folders using rbind() 
           function.
      1-b) Add the column names. The list of "feature.txt" can be names for Features.
