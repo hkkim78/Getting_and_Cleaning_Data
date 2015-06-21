@@ -1,5 +1,5 @@
 # Getting_and_Cleaning_Data/Week_3
-# Date: 05/24/2015
+# Date: 06/21/2015
 
 # filename: run_analysis.R
 
